@@ -2,7 +2,7 @@
 
 A real-time traffic simulation showcasing queue data structures & traffic management. Includes multiple vehicle types, traffic lights, and priority-based queue handling.
 
-![Traffic Simulation Demo](demo.gif)
+![Traffic Simulation Demo](working_demo.gif)
 
 ## ✨ Features
 
