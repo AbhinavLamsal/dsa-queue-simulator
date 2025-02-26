@@ -14,7 +14,7 @@ void writeVehicleToFile(FILE *file, Vehicle *vehicle) {
 }
 
 int SDL_main(int argc, char *argv[]) {
-    srand(time(NULL));
+    srand(time(NULL));// Initialize random seed using the current time.
     FILE *file = fopen("bin/vehicles.txt", "w");
     if (!file) {
         perror("Failed to open vehicles.txt");
