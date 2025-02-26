@@ -21,8 +21,7 @@ int SDL_main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("Vehicle generation started...\n"); // Debug print statement (1st extra line)
-
+    printf("Vehicle generation started...\n");  // Debug statement indicating the start of vehicle generation.
     while (1) {
         // Generation of a new vehicle
         Direction spawnDirection = (Direction)(rand() % 4);
