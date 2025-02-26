@@ -27,7 +27,7 @@ int SDL_main(int argc, char *argv[]) {
         Direction spawnDirection = (Direction)(rand() % 4);
         Vehicle *newVehicle = createVehicle(spawnDirection);
 
-        printf("Generated vehicle at direction: %d\n", spawnDirection); // Debug print (2nd extra line)
+        printf("Generated vehicle at direction: %d\n", spawnDirection); // Debug message showing the direction of the newly generated vehicle.
 
         // Write the vehicle data to the file
         writeVehicleToFile(file, newVehicle);
