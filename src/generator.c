@@ -37,7 +37,7 @@ int SDL_main(int argc, char *argv[]) {
         // Free the vehicle memory
         free(newVehicle);
 
-        // Wait for a short period before generating the next vehicle
+           // Introduce a small delay before creating the next vehicle
         SDL_Delay(500); // 0.5 seconds delay
     }
 
