@@ -31,7 +31,8 @@ int SDL_main(int argc, char *argv[]) {
 
         // Write the vehicle data to the file
         writeVehicleToFile(file, newVehicle);
-        fflush(file); // Ensure data is written to the file immediately
+        fflush(file); // Immediately write the data to the file.
+
 
         // Free the vehicle memory
         free(newVehicle);
