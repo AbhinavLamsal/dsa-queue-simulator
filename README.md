@@ -1,33 +1,34 @@
-# 🚦 Traffic Queue Simulator
+# 🚧 Traffic Flow Simulator
 
-A real-time traffic simulation showcasing queue data structures & traffic management. Includes multiple vehicle types, traffic lights, and priority-based queue handling.
+A real-time simulation of traffic management, demonstrating the use of queue data structures and real-world traffic control mechanisms. Features a variety of vehicles, signalized intersections, and priority-based queue handling.
 
 ![Traffic Simulation Demo](working_demo.gif)
 
 ## ✨ Features
 
-- 🏎️ Real-time 4-way intersection simulation
-- 🚓🚑🚒 Multiple vehicle types with priority handling
-- 🚦 Dynamic traffic light system
-- 🔄 Vehicles can turn left, right, or go straight
-- 🎯 Queue-based traffic management
+-🚗 Real-time simulation of a 4-way intersection
+-🚓🚑🚒 Support for different vehicle types with priority handling
+-🚦 Automated traffic light system
+-🔄 Vehicles can turn left, right, or continue straight
+-🎯 Queue-based traffic management system
 
 ## ⚙️ Prerequisites
 
 You'll need:
-- 🖥️ GCC/G++ compiler
-- 🎮 SDL2 library
-- 🏗️ MinGW (for Windows)
+
+-🖥️ GCC/G++ compiler
+-🎮 SDL2 library
+-🏗️ MinGW (for Windows users)
 
 ### 🛠 Installing SDL2
 
 #### Windows Users:
-1. 🔗 [Download SDL2](https://www.libsdl.org/download-2.0.php)
-2. 📂 Extract contents to your project directory
-3. 🏗 Create folders if missing:
-   - `include/` (for headers)
-   - `lib/` (for library files)
-   - `bin/` (for output)
+1.🔗 Download SDL2
+2.📂 Extract the contents into your project folder
+3.🏗 Create necessary folders if they're not already there:
+-include/ (for header files)
+-lib/ (for library files)
+-bin/ (for executable files)
 
 ## 📂 Project Structure
 
@@ -67,21 +68,21 @@ g++ -o bin/generator src/generator.c src/traffic_simulation.c -lSDL2 -Iinclude -
 ```bash
 ./bin/main
 ```
-3. 🚗 Watch vehicles navigate the intersection!
-4. ❌ Click the close button (X) to exit.
+3. 🚗 Observe vehicles navigating the intersection!
+4. ❌ Close the window by clicking the close button (X).
 
 ## 🚙 Vehicle Types
-- 🔵 Regular cars
-- 🔴 Ambulances
-- 🔷 Police cars
-- 🟠 Fire trucks
+-🔵 Standard vehicles
+-🔴 Ambulances
+-🔷 Police vehicles
+-🟠 Fire trucks
 
 ## 🏁 Traffic Management
 
-- 🚦 **Queue System:** Each lane manages its own queue.
-- 🚨 **Priority Handling:** Emergency vehicles go first.
-- 🔄 **Traffic Light Cycles:** Automated red/green transitions.
-- 🔁 **Turn Management:** Vehicles can turn left, right, or go straight.
+-🚦 Queue System: Each lane has its own dedicated queue.
+-🚨 Priority Handling: Emergency vehicles are given priority.
+-Traffic Light Cycles: Red/green light transitions occur automatically.
+-🔁 Turn Management: Vehicles can choose to turn left, right, or go straight.
 
 ## 📜 Code Highlights
 
@@ -111,18 +112,20 @@ typedef enum {
 
 ## 🤝 Contributing
 
-1. 🍴 Fork the repo
-2. 🌿 Create a branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. 🚀 Push (`git push origin feature/AmazingFeature`)
-5. 🔥 Open a Pull Request
+1.🍴 Fork the repo
+2.🌿 Create a new branch (git checkout -b feature/YourFeature)
+3.💾 Commit your changes (git commit -m 'Add YourFeature')
+4.🚀 Push your branch (git push origin feature/YourFeature)
+5.🔥 Open a pull request
 
 ## 📚 References
-- 📖 [SDL2 Documentation](https://wiki.libsdl.org/)
-- 📘 CLRS: Queue Data Structures
-- 🚗 Highway Capacity Manual (Traffic Flow Theory)
+-📖 SDL2 Documentation
+-📘 CLRS: Data Structures for Queues
+-🚗 Highway Capacity Manual (Theory of Traffic Flow)
 
 ## 🙌 Acknowledgments
-- ❤️ SDL2 Dev Team
-- 🔬 Traffic Simulation Research Community
-- 🎯 Contributors & Testers
+-❤️ SDL2 Development Team
+-🔬 Traffic Simulation Research Community
+-🎯 Project Contributors & Testers
+
+
