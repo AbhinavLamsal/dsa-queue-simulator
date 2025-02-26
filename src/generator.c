@@ -44,7 +44,7 @@ int SDL_main(int argc, char *argv[]) {
     //vehicle gen delay added
     printf("Vehicle generation loop ended.\n"); // Debug print (3rd extra line)
     
-    fclose(file);
+    fclose(file);// Close the file after finishing the data logging.
     printf("File closed successfully.\n"); // Debug print (4th extra line)
     
     return 0;
