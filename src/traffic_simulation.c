@@ -311,7 +311,8 @@ void updateVehicle(Vehicle *vehicle, TrafficLight *lights)
         }
     }
 
-    // Update vehicle state based on stopping conditions
+    
+    // Adjust vehicle state based on stop conditions
     if (shouldStop)
     {
         vehicle->state = STATE_STOPPING;
