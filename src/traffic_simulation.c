@@ -53,7 +53,7 @@ void updateTrafficLights(TrafficLight *lights)
     { // Change lights every 5 seconds
         lastUpdateTicks = currentTicks;
 
-        // Check for high-priority lanes
+         // Adjusting priority based on lane congestion
         for (int i = 0; i < 4; i++)
         {
             if (laneQueues[i].size > 10)
