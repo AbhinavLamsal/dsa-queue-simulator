@@ -66,7 +66,7 @@ void updateTrafficLights(TrafficLight *lights)
             }
         }
 
-        // Toggle lights based on priority
+         // Switching lights or prioritizing heavily congested lanes
         for (int i = 0; i < 4; i++)
         {
             if (lanePriorities[i] == 1)
