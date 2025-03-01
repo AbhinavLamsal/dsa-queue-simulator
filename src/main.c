@@ -127,7 +127,7 @@ int main(int argc, char *argv[]) {
         // Refresh the traffic signal statuses
         updateTrafficLights(lights);
 
-        // Update statistics
+        //Recalculate and update simulation statistics"
         float minutes = (SDL_GetTicks() - stats.startTime) / 60000.0f;
         if (minutes > 0) {
             stats.vehiclesPerMinute = stats.vehiclesPassed / minutes;
