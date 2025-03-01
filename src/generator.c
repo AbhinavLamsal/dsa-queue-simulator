@@ -14,37 +14,37 @@ void writeVehicleToFile(FILE *file, Vehicle *vehicle) {
 }
 
 int SDL_main(int argc, char *argv[]) {
-    srand(time(NULL));
+    srand(time(NULL));// Initialize random seed using the current time.
     FILE *file = fopen("bin/vehicles.txt", "w");
     if (!file) {
         perror("Failed to open vehicles.txt");
         return 1;
     }
 
-    printf("Vehicle generation started...\n"); // Debug print statement (1st extra line)
-
+    printf("Vehicle generation started...\n");  // Debug statement indicating the start of vehicle generation.
     while (1) {
         // Generation of a new vehicle
         Direction spawnDirection = (Direction)(rand() % 4);
         Vehicle *newVehicle = createVehicle(spawnDirection);
 
-        printf("Generated vehicle at direction: %d\n", spawnDirection); // Debug print (2nd extra line)
+        printf("Generated vehicle at direction: %d\n", spawnDirection); // Debug message showing the direction of the newly generated vehicle.
 
         // Write the vehicle data to the file
         writeVehicleToFile(file, newVehicle);
-        fflush(file); // Ensure data is written to the file immediately
+        fflush(file); // Immediately write the data to the file.
+
 
         // Free the vehicle memory
         free(newVehicle);
 
-        // Wait for a short period before generating the next vehicle
+           // Introduce a small delay before creating the next vehicle
         SDL_Delay(500); // 0.5 seconds delay
     }
 
     //vehicle gen delay added
     printf("Vehicle generation loop ended.\n"); // Debug print (3rd extra line)
     
-    fclose(file);
+    fclose(file);// Close the file after finishing the data logging.
     printf("File closed successfully.\n"); // Debug print (4th extra line)
     
     return 0;

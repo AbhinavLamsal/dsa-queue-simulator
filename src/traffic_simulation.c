@@ -53,7 +53,7 @@ void updateTrafficLights(TrafficLight *lights)
     { // Change lights every 5 seconds
         lastUpdateTicks = currentTicks;
 
-        // Check for high-priority lanes
+         // Adjusting priority based on lane congestion
         for (int i = 0; i < 4; i++)
         {
             if (laneQueues[i].size > 10)
@@ -66,7 +66,7 @@ void updateTrafficLights(TrafficLight *lights)
             }
         }
 
-        // Toggle lights based on priority
+         // Switching lights or prioritizing heavily congested lanes
         for (int i = 0; i < 4; i++)
         {
             if (lanePriorities[i] == 1)
@@ -191,7 +191,8 @@ Vehicle *createVehicle(Direction direction)
         break;
     }
 
-    // Center vehicle in lane
+        // Align vehicle in the middle of the lane
+
     if (direction == DIRECTION_NORTH || direction == DIRECTION_SOUTH)
     {
         vehicle->x += (LANE_WIDTH / 4 - vehicle->rect.w / 2); // Center in lane
@@ -311,7 +312,8 @@ void updateVehicle(Vehicle *vehicle, TrafficLight *lights)
         }
     }
 
-    // Update vehicle state based on stopping conditions
+    
+    // Adjust vehicle state based on stop conditions
     if (shouldStop)
     {
         vehicle->state = STATE_STOPPING;
