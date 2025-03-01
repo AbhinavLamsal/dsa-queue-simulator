@@ -111,8 +111,7 @@ int main(int argc, char *argv[]) {
             free(newVehicle);
             lastVehicleSpawn = currentTime;
         }
-
-        // Update vehicles
+// Update movement and state of active vehicles
         for (int i = 0; i < MAX_VEHICLES; i++) {
             if (vehicles[i].active) {
                 updateVehicle(&vehicles[i], lights);
