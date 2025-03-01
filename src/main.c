@@ -135,7 +135,7 @@ int main(int argc, char *argv[]) {
 
         renderSimulation(renderer, vehicles, lights, &stats);
 
-        SDL_Delay(16); // Cap at ~60 FPS
+        SDL_Delay(16); // Limit the framerate to roughly 60 frames per second
     }
     //cleaning up window and renderer frr
 
