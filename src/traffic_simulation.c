@@ -191,7 +191,8 @@ Vehicle *createVehicle(Direction direction)
         break;
     }
 
-    // Center vehicle in lane
+        // Align vehicle in the middle of the lane
+
     if (direction == DIRECTION_NORTH || direction == DIRECTION_SOUTH)
     {
         vehicle->x += (LANE_WIDTH / 4 - vehicle->rect.w / 2); // Center in lane
