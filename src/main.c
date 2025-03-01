@@ -124,7 +124,7 @@ int main(int argc, char *argv[]) {
             }
         }
 
-        // Update traffic lights
+        // Refresh the traffic signal statuses
         updateTrafficLights(lights);
 
         // Update statistics
