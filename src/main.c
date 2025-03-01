@@ -116,7 +116,7 @@ int main(int argc, char *argv[]) {
             if (vehicles[i].active) {
                 updateVehicle(&vehicles[i], lights);
 
-                // Check if vehicle has passed through intersection
+                // Determine if a vehicle has exited the intersection
                 if (!vehicles[i].active) {
                     stats.vehiclesPassed++;
                     vehicleCount--;
