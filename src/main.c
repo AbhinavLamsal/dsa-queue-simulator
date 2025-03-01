@@ -137,7 +137,7 @@ int main(int argc, char *argv[]) {
 
         SDL_Delay(16); // Limit the framerate to roughly 60 frames per second
     }
-    //cleaning up window and renderer frr
+    //Tidy up and release SDL window and renderer resources
 
     cleanupSDL(window, renderer);
     return 0;
